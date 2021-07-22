@@ -3,7 +3,7 @@
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
-> In this post you can see my first approach to use Node.js.
+> In this post you can see my first approach to pprogramming using Node.js.
 
 ### ✨ [Live View](https://basicinformationnode.vlunaklick.repl.co/about)
 
