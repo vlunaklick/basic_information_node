@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "buildcss": "tailwind build ./style.css -o ./styles.css --watch",
+    "buildcss": "npx tailwindcss -i ./style.css -o ./styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

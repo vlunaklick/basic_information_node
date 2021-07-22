@@ -5,7 +5,7 @@
 
 > In this post you can see my first approach to use Node.js.
 
-### ✨ [Live View](https://vlunaklick.github.io/basic_information_node/)
+### ✨ [Live View](https://basicinformationnode.vlunaklick.repl.co/about)
 
 ## Author
 
