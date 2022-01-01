@@ -5,7 +5,7 @@
 
 > In this post you can see my first approach to programming using Node.js.
 
-### ✨ [Live View](https://basicinformationnode.vlunaklick.repl.co/about)
+### ✨ [Live View](https://basicinformationnode.vlunaklick.repl.co)
 
 ## Author
 
