@@ -5,12 +5,16 @@ const fs = require('fs')
 
 const stlyesPage = fs.readFileSync('./styles.css')
 const errorPage = fs.readFileSync('./pages/404.html')
+const navAppear = fs.readFileSync('./javascripts/navAppear.js')
 
 const app = http.createServer(async (req, res) => {
 	let fileHandle
 	if (req.url === '/styles.css') {
 		res.writeHead(200, { 'Content-Type': 'text/css' })
 		res.end(stlyesPage)
+	} else if (req.url === '/javascripts/navAppear.js') {
+		res.writeHead(200, { 'Content-Type': 'text/javascript' })
+		res.end(navAppear)
 	} else {
 		let valor = req.url === '/' ? 'index' : req.url
 		fileHandle = await fsPromises
@@ -26,6 +30,6 @@ const app = http.createServer(async (req, res) => {
 	}
 })
 
-const PORT = 3000
+const PORT = 5515
 
 app.listen(PORT)

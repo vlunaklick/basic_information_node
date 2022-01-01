@@ -8,20 +8,76 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <main class="min-h-screen bg-indigo-400">
-    <div class="container flex justify-center min-w-full p-2  bg-indigo-700 text-center border-indigo-800 shadow-lg border-b-2 border-indigo-900">
-        <h1 class="text-2xl text-gray-50 font-mono antialiased font-semibold">Basic Information Page</h1>
-    </div>
-    <div class=" min-w-full  ">
-        <ul class="text-center text-gray-50 bg-indigo-500 md:flex">
-            <a class="md:w-full md:border-r border-indigo-800" href="/"> <li class="p-2 border-indigo-800 hover:bg-indigo-600 border-b  cursor-pointer ">Home</li></a>
-            <a class="md:w-full border-indigo-800" href="/about"> <li class="p-2 border-indigo-800 hover:bg-indigo-600 border-b cursor-pointer ">About</li></a>
-            <a class="md:w-full md:border-l border-indigo-800" href="/contact-me"> <li class="p-2 border-indigo-800 hover:bg-indigo-600 border-b cursor-pointer ">Contact me</li> </a>
-        </ul>
-    </div>
-    <div class="min-h-full flex justify-center p-2.5 text-black">
-        <h2>Welcome to my "Basic Information Page"</h2>
-    </div>
-</main>
+    <div class="min-h-full">
+        <nav class="bg-gray-800">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+              <div class="flex items-center">
+                <div class="flex-shrink-0">
+                  <h1 class="text-3xl font-bold text-gray-50">Info Page</h1>
+                </div>
+                <div class="hidden md:block">
+                  <div class="ml-10 flex items-baseline space-x-4">
+
+                    <a href="/" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+      
+                    <a href="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+            
+                    <a href="/contact-me" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact me</a>
+            
+                  </div>
+                </div>
+              </div>
+              <div id="btn-nav" class="-mr-2 flex md:hidden">
+                <!-- Mobile menu button -->
+                <button type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+
+                  <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Mobile menu, show/hide based on menu state. -->
+          <div class="md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="/" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+      
+              <a href="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+      
+              <a href="/contact-me" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact me</a>
+      
+            </div>
+            
+          </div>
+        </nav>
+      
+        <header class="bg-white shadow">
+          <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold text-gray-900">
+              Home
+            </h1>
+          </div>
+        </header>
+        <main>
+          <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <!-- Replace with your content -->
+            <div class="px-4 py-6 sm:px-0">
+                <h3 class="break-words">Welcome to my "Basic Information Page"! Here you can my first try using Node.js for development. Also, I am using Tailwind UI so the design you see in all the pages
+                  isn't really mine 😖 but I changed it enough so it can be more as I like it and added the JavaScript so the nav could work when it's in mobile version.
+                </h3>
+            </div>
+            <!-- /End replace -->
+          </div>
+        </main>
+      </div>
+      <script src="../javascripts/navAppear.js"></script>
     
 </body>
